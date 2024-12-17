@@ -14,6 +14,8 @@ app.use(express.urlencoded({ extended : false})) // add middleware
 
 
 app.use('/api/goals', require('./routes/goalRoutes')) // when hit api/goals will look into the goalRoutes file
+app.use('/api/users', require('./routes/userRoutes')) 
+
 
 app.use(errorHandler)
 

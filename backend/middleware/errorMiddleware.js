@@ -1,4 +1,5 @@
 // middleware are functions that execute during the request response cycle.
+// runs during the req, res cycle, when sending the route this func will run
 
 // response a json object with message and stack, in development mode
 const errorHandler = (err, req, res, next) => {
