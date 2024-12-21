@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend"
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "KW",
   "license": "MIT",
@@ -20,7 +21,9 @@
     "react-icons": "^5.4.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7",
+    "@babel/plugin-transform-private-property-in-object": "^7.23.4"
   },
   "description": ""
 }
